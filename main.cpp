@@ -23,7 +23,6 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <RJA_SSD1306.h>
-#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -139,8 +138,8 @@ if (HAL_I2C_IsDeviceReady(&hi2c1, DISPLAY.getCAddress(), 1, 10) == HAL_OK) {
 
 	  //Get input
 	  for (int i = 0; i < 2; i++){
-	  		  HAL_ADC_Start_DMA(&hadc2, rawInput, 2); // start adc in DMA mode; [0] current,[1] voltage
-	  	  }
+	  	  HAL_ADC_Start_DMA(&hadc2, rawInput, 2); // start adc in DMA mode; [0] current,[1] voltage
+	  }
 
 	  //Get voltage decimals
 
